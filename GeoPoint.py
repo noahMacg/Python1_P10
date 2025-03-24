@@ -36,3 +36,7 @@ class GeoPoint:
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
         return radius * c
+
+    # Print method
+    def __str__(self):
+        return f"{self.lat:>8.2f} {self.long:>13.2f} {' '*4} {self.description}"
